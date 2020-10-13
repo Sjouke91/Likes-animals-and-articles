@@ -24,28 +24,28 @@ export default function ArticleList() {
   ]);
 
   function Delete() {
-    set_articles(null);
+    set_articles([]);
   }
 
-  if (articles === null) {
-    return <button onClick={Delete}>Clear notifications</button>;
-  } else {
-    return (
-      <div>
-        <p>Here's a lovely list of articles, for your reading pleasure:</p>
-        {articles.map((article) => {
-          return (
-            <div>
-              <ArticleCard
-                key={article.id}
-                title={article.title}
-                body={article.body}
-              />
-            </div>
-          );
-        })}
-        <button onClick={Delete}>Clear notifications</button>
-      </div>
-    );
-  }
+  // if (articles === null) {
+  //   return <button onClick={Delete}>Clear notifications</button>;
+  // } else {
+  return (
+    <div>
+      <p>Here's a lovely list of articles, for your reading pleasure:</p>
+      {articles.map((article) => {
+        return (
+          <div>
+            <ArticleCard
+              key={article.id}
+              title={article.title}
+              body={article.body}
+            />
+          </div>
+        );
+      })}
+      <button onClick={Delete}>Clear notifications</button>
+    </div>
+  );
 }
+// }

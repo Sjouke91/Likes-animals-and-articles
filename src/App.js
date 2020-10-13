@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import LikeCounter from "./components/LikeCounter";
-import LikeButton from "./components/LikeButton";
-import AwesomeAnimals from "./components/AwesomeAnimals";
+// import LikeCounter from "./components/LikeCounter";
+// import LikeButton from "./components/LikeButton";
+// import AwesomeAnimals from "./components/AwesomeAnimals";
 import ArticleList from "./components/ArticleList";
 
 function App() {
